@@ -9,6 +9,7 @@ test('Set Employee Name', () => {
     const name = "Grant"
     const employee = new Employee(name);
     expect(employee.name).toBe(name);
+    // expect(employee.id).toBe(name);
 });
 test('Set ID', () => {
     const testId = 100;

@@ -15,7 +15,7 @@ const generateHTML = function (teamString) {
 <body>
 <div class="header">
 <div class="jumbotron bg-warning">
-   <h1 class="display-4 text-white text-center">My Team</h1>
+   <h1 class="display-4 text-white text-center">My Radical Team</h1>
 </div>
 </div>
 <div class="container-body container-fluid">
@@ -41,7 +41,7 @@ const generateCard = function (arr) {
         roleInfo = `Office Number: ${arr.officeNumber}`
     } else if (arr.title === "Engineer") {
         positionIcon = `<i class="fas fa-glasses"></i>`
-        roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">{$arr.github}</a>`
+        roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">Cheese</a>`
     } else if (arr.title === "Intern") {
         positionIcon = `<i class="fas fa-user-graduate"></i>`
         roleInfo = `School: ${arr.school}`

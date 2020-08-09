@@ -33,14 +33,14 @@ const generateHTML = function (teamString) {
 const generateCard = function (arr) {
     //Fontawesome Icons change based on role
     let positionIcon;
-    //Criteria for display
+    //display info
     let roleInfo;
 
     if (arr.title === "Manager") {
         positionIcon = `<i class="fas fa-mug-hot"></i>`
         roleInfo = `Office Number: ${arr.officeNumber}`
     } else if (arr.title === "Engineer") {
-        positionIcon = `<i class="fas fa=glasses"></i>`
+        positionIcon = `<i class="fas fa-glasses"></i>`
         roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">{$arr.github}</a>`
     } else if (arr.title === "Intern") {
         positionIcon = `<i class="fas fa-user-graduate"></i>`

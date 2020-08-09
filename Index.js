@@ -105,8 +105,8 @@ async function prompt() {
                 }, ]);
 
                 // add to team Arr
-                const intern = new Intern(response.name, response.id, response.email, response2.x);
-                teamArray.push(intern);
+                const engineer = new Engineer(response.name, response.id, response.email, response2.x);
+                teamArray.push(engineer);
             
             } else if (response.role === "Manager") {
                 response2 = await inquirer.prompt([{
@@ -121,6 +121,20 @@ async function prompt() {
                 // add to team Arr
                 const manager = new Manager(response.name, response.id, response.email, response2.x);
                 teamArray.push(manager);
+
+            } else if (response.role === "Intern") {
+                response2 = await inquirer.prompt([{
+                    type: "input",
+                    name: "x",
+                    message: "What school is employee attending: ",
+                    validate: function validateName(name){
+                        return name !== "";
+                    },
+                }, ]);
+
+                // add to team Arr
+                const intern = new Intern(response.name, response.id, response.email, response2.x);
+                teamArray.push(intern);
             }
         } catch (err) {
             return console.log(err);

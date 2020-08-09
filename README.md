@@ -2,16 +2,28 @@
 ## Description
 This app uses Node, NPM, Inquirer, Email-Validation, and Jest. User will follow prompts then recieve a webpage with their teams information. 
 
+OOP & TDD 😎
+
+![GitHub followers](https://img.shields.io/github/followers/nosremetnarg?label=GitHub%20Followers&logo=Github&?style=social)
+
+![Language](https://img.shields.io/github/languages/top/nosremetnarg/teamBuilder)
+
+![Last commit](https://img.shields.io/github/last-commit/nosremetnarg/teamBuilder)
+
+![jQuery](https://img.shields.io/badge/-jQuery-brightgreen) ![javascript](https://img.shields.io/badge/-javascript-green) ![node JS](https://img.shields.io/badge/-nodeJS-yellowgreen) ![inquirer](https://img.shields.io/badge/-inquirer-yellow) ![jest](https://img.shields.io/badge/-jest-yellow) ![coffee](https://img.shields.io/badge/-coffee-red)
+
 
 ***[Video Walkthrough](https://drive.google.com/file/d/1CT0B2MUPp4dKdG7dESPJHeMKcZHC_9xi/view)***
 
 ## User Story
+```
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
-
+```
 
 ## Acceptance Criteria
+```
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input
@@ -29,3 +41,4 @@ WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+```
